@@ -1,0 +1,224 @@
+/* General */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+/* Nav Bar */
+nav{
+    display: flex;
+    height: 65px;
+    justify-content: flex-end;
+    background-color: black;
+    width: 100%;
+}
+
+.list{
+    display: flex;
+    flex-direction: row;
+    width: 500px;
+    align-items: center;
+    justify-content: space-around;
+    color: rgb(238, 227, 227);
+}
+
+.list li {
+    list-style-type: none;
+}
+
+.list a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+}
+
+.list a:hover {
+    color: grey;
+}
+
+/* Intro section */
+#section-1 {
+    display: flex;
+    --bkg-color-1: rgb(178, 178, 189);
+    --bkg-color-2: rgb(39, 138, 130);
+    background-image: url(Background.jpg);
+    background-size: cover;
+    height: 600px;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(175, 164, 147);
+    font-family: 'Poppins', sans-serif;
+}
+
+#section-1 h1{
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 2rem;
+}
+
+#section-1 h2{
+    font-style: italic;
+    font-weight: lighter;
+}
+
+/* About section */
+#section-2{
+    border: 1px solid black;
+    background-color: rgb(219, 219, 219);
+    display: flex;
+    background-size: cover;
+    height: 30em;
+}
+
+#about-text{
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    color: black;
+    width: 600px;
+    position: relative;
+    top: 6%;
+    left: 10%;
+}
+
+#about-text h4 {
+    font-style: italic;
+    font-size: 25px;
+    color: black;
+    margin-left: 70px;
+}
+
+#first-paragraph{
+    border-top: 1px solid black;
+    padding-top: 10px;
+    font-size: 17px;
+    margin-left: 70px;
+}
+
+#about-text p{
+    padding-top: 10px;
+    font-size: 17px;
+    margin-left: 70px;
+}
+
+.personal-photo{
+    display: flex;
+    background-image: url("Personal Pic.jpg");
+    position: relative;
+    top: 10%;
+    left: 20%;
+    width: 25%;
+    height: 70%;
+    background-size: cover;
+}
+
+/* Footer, contact info */
+#footer{
+    color: white;
+    height: 150px;
+    background-image: linear-gradient(to right, rgb(148, 98, 98), rgb(97, 96, 96));
+    align-items: center;
+    justify-content: center;
+}
+
+.info{
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+}
+
+.gmail-icon{
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 0px;
+    left: -20px;
+    padding: 2px;
+}
+
+.gmail-icon a{
+    color: white;
+    text-decoration: none;
+}
+
+.linkedin-icon{
+    align-items: center;
+    position: relative;
+    top: 0px;
+    left: 20px;
+}
+
+.linkedin-icon a{
+    color: white;
+    text-decoration: none;
+}
+
+/* Projects Section */
+#section-3{
+    border: 1px solid red;
+}
+
+/* Skills Section */
+#section-4{
+    background-image: url(Background-2.jpg);
+    color: rgb(175, 164, 147);
+    background-size: cover;
+    width: 100%;
+}
+
+#section-4 h1{
+    padding-top: 60px;
+    padding-bottom: 20px;
+    font-style: italic;
+    width: 50%;
+    position: relative;
+    left: 17%;
+}
+
+#table{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    grid-template-rows: repeat(7, 70px);
+    grid-template-columns: repeat(2, 500px);
+    padding-bottom: 50px;
+    align-items: center;
+}
+
+#table p{
+    font-size: 18px;
+}
+
+@media screen and (max-width: 768px) {
+    #section-2{
+        height: 80vh;
+    }
+}
+
+
+
