@@ -39,6 +39,7 @@ nav{
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
     font-weight: 800;
+    transition: 0.3s;
 }
 
 .list a:hover {
@@ -52,6 +53,7 @@ nav{
     --bkg-color-2: rgb(39, 138, 130);
     background-image: url(Background.jpg);
     background-size: cover;
+    width: 100%;
     height: 600px;
     justify-content: center;
     align-items: center;
@@ -68,7 +70,7 @@ nav{
 #section-1 h1{
     text-transform: uppercase;
     letter-spacing: 3px;
-    font-size: 2rem;
+    font-size: 40px;
 }
 
 #section-1 h2{
@@ -93,7 +95,7 @@ nav{
     width: 600px;
     position: relative;
     top: 6%;
-    left: 10%;
+    left: 12%;
 }
 
 #about-text h4 {
@@ -120,11 +122,70 @@ nav{
     display: flex;
     background-image: url("Personal Pic.jpg");
     position: relative;
-    top: 10%;
+    top: 18%;
     left: 20%;
-    width: 25%;
-    height: 70%;
+    width: 21em;
+    height: 20em;
     background-size: cover;
+}
+
+/* Projects Section */
+#section-3{
+    height: 400px;
+    background-image: linear-gradient(to right, rgb(53, 133, 50), white);
+}
+
+#section-3 div{
+    border: 1px solid red;
+    width: 50%;
+    position: relative;
+    left: 11.5%;
+    padding: 50px;
+}
+
+#section-3 h4{
+    font-size: 25px;
+}
+
+#project-website{
+    display: flex;
+}
+
+#project-calculator{
+    display: flex;
+}
+
+/* Skills Section */
+#section-4{
+    background-image: url(Background-2.jpg);
+    color: rgb(175, 164, 147);
+    background-size: cover;
+    width: 100%;
+}
+
+#section-4 h1{
+    padding-top: 60px;
+    padding-bottom: 20px;
+    font-style: italic;
+    width: 50%;
+    position: relative;
+    left: 17%;
+}
+
+#table{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    grid-template-rows: repeat(7, 70px);
+    grid-template-columns: repeat(2, 500px);
+    padding-bottom: 50px;
+    align-items: center;
+}
+
+#table p{
+    font-size: 18px;
 }
 
 /* Footer, contact info */
@@ -176,47 +237,40 @@ nav{
     text-decoration: none;
 }
 
-/* Projects Section */
-#section-3{
-    border: 1px solid red;
+/* Media Queries */
+@media screen and (max-width: 1250px) {
+    #about-text{
+        position: relative;
+        left: 5%;
+    }
+
+    .personal-photo{
+        position: relative;
+        left: 15%;
+    }
 }
 
-/* Skills Section */
-#section-4{
-    background-image: url(Background-2.jpg);
-    color: rgb(175, 164, 147);
-    background-size: cover;
-    width: 100%;
+@media screen and (max-width: 1170px) {
+    #about-text{
+        position: relative;
+        left: 2%;
+    }
+
+    .personal-photo{
+        position: relative;
+        left: 10%;
+    }
 }
 
-#section-4 h1{
-    padding-top: 60px;
-    padding-bottom: 20px;
-    font-style: italic;
-    width: 50%;
-    position: relative;
-    left: 17%;
-}
+@media screen and (max-width: 1120px) {
+    #about-text{
+        position: relative;
+        left: 0%;
+    }
 
-#table{
-    display: grid;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    grid-template-rows: repeat(7, 70px);
-    grid-template-columns: repeat(2, 500px);
-    padding-bottom: 50px;
-    align-items: center;
-}
-
-#table p{
-    font-size: 18px;
-}
-
-@media screen and (max-width: 768px) {
-    #section-2{
-        height: 80vh;
+    .personal-photo{
+        position: relative;
+        left: 5%;
     }
 }
 
