@@ -63,6 +63,12 @@ nav{
     height: 650px;
     justify-content: center;
     align-items: center;
+    animation: fadein 1s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
 
 .text-box{
@@ -165,10 +171,24 @@ nav{
         margin: 0 auto;
         position: relative;
         left: -5%;
-        top: -25vw;                      /* As viewport width increases, top decreases (higher up on page) */
+        top: -24vw;                      /* As viewport width increases, top decreases (higher up on page) */
         border: 1px solid red;
     }
 }
+
+/*
+@media screen and (max-width: 815px) {
+    #about-text{
+        padding-bottom: 3vw;
+    }
+}
+
+@media screen and (max-width: 808px) {
+    .personal-photo{
+        padding-top: 4vw;
+    }
+}
+/*
 
 /* Projects Section */
 #section-3{
